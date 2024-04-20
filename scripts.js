@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSG8x8bbPptSkst7INyoAoflhAuvjlGYUCdbi_U_T6Ulqscq7flhvU5ED7tGWjjwQwTPakzmI20P0xF/pub?gid=0&single=true&output=csv')
+    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSG8x8bbPptSkst7INyoAoflhAuvjlGYUCdbi_U_T6Ulqscq7flhvU5ED7tGWjjwQwTPakzmI20P0xF/pub?output=csv')
         .then(response => response.text())
         .then(data => {
             // Split the CSV data into rows
